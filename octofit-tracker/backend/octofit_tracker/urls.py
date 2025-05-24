@@ -31,12 +31,13 @@ from rest_framework.response import Response
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = "https://humble-waddle-xgxjxq9wgw36wvj-8000.app.github.dev/api/"
     return Response({
-        'users': '/users/',
-        'teams': '/teams/',
-        'activity': '/activity/',
-        'leaderboard': '/leaderboard/',
-        'workouts': '/workouts/',
+        'users': base_url + 'users/',
+        'teams': base_url + 'teams/',
+        'activity': base_url + 'activity/',
+        'leaderboard': base_url + 'leaderboard/',
+        'workouts': base_url + 'workouts/',
     })
 
 urlpatterns = [
