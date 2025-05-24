@@ -26,6 +26,7 @@ class Command(BaseCommand):
         Activity.objects.create(user_email=user2.email, activity_type="walk", duration=45, date=timezone.now())
         Activity.objects.create(user_email=user3.email, activity_type="strength", duration=20, date=timezone.now())
 
+
         # Leaderboard
         Leaderboard.objects.create(user_email=user1.email, points=100)
         Leaderboard.objects.create(user_email=user2.email, points=80)
