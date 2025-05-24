@@ -3,7 +3,7 @@ from octofit_tracker.models import User, Team, Activity, Leaderboard, Workout
 from django.utils import timezone
 
 class Command(BaseCommand):
-    help = 'Populate the octofit_db database with test data.'
+    help = 'Populate the octofit_db database with test data for users, teams, activities, leaderboard, and workouts.'
 
     def handle(self, *args, **kwargs):
         # Users
